@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkgray;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 2rem;
+    color: darkslategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
