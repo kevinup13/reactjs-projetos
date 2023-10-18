@@ -2,18 +2,88 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
     width: 100%;
     height: 100px;
-    text-align: center;
-    font-size: 2rem;
-    color: darkslategray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
 }
 
 body {
     background-color: gainsboro;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    border-radius: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 10px 20px;
+
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.photo .img {
+    background-image: url("hero.jpg");
+    background: cover;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid chocolate;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+.formulario input {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.formulario input[type=button] {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 122, 36);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario input[type=button]:hover {
+    background-color: chocolate;
 }
