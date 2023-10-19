@@ -84,7 +84,7 @@ form {
     font-size: 16px;
 }
 
-.formulario input[type=button] {
+.formulario input[type=submit] {
     display: flex;
     justify-content: center;
     background-color: rgb(242, 122, 36);
@@ -93,7 +93,7 @@ form {
     cursor: pointer;
 }
 
-.formulario input[type=button]:hover {
+.formulario input[type=submit]:hover {
     background-color: chocolate;
 }
 
