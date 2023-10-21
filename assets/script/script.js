@@ -3,7 +3,7 @@
 alert("Bem vindo(a)!");
 
 let nome = prompt("Digite seu nome: ");
-
+// Functions
 function formataNome() {
     let letra;
     let tamanho;
@@ -24,7 +24,7 @@ function formataNome() {
         }
     }
 }
-
+//Events
 if (nome == '') {
     nome = "Sem Nome";
     document.querySelector(".name").innerHTML = `Olá ${nome}, seja bem vindo de volta!`;
@@ -32,3 +32,17 @@ if (nome == '') {
     formataNome(nome);
     document.querySelector(".name").innerHTML = `Olá ${nome}, seja bem vindo de volta!`;
 }
+
+document.querySelector('.btn').addEventListener('click', () => {
+    let body = document.querySelector('body');
+    if (body.classList.contains('light')) {
+        body.classList.remove('light');
+        body.classList.add('dark');
+    } else {
+        body.classList.add('light');
+        body.classList.remove('dark');
+    }
+
+})
+
+

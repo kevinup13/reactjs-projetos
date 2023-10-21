@@ -19,8 +19,14 @@ header h1 {
     color: white;
 }
 
-body {
+.light {
     background-color: gainsboro;
+    transition: 1s;
+}
+
+.dark {
+    background-color: black !important;
+    transition: 1s;
 }
 
 .area-login {
@@ -34,7 +40,7 @@ body {
 form {
     display: flex;
     width: 500px;
-    height: 400px;
+    height: auto;
     background-color: blueviolet;
     border-radius: 8px;
 }
@@ -61,7 +67,7 @@ form {
 }
 
 .photo .img {
-    background-image: url("hero.jpg");
+    background-image: url("../images/hero.jpg");
     background: cover;
     background-size: 100%;
     width: 100px;
@@ -93,9 +99,30 @@ form {
     cursor: pointer;
 }
 
+
 .formulario input[type=submit]:hover {
     background-color: chocolate;
 }
+
+.formulario a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 122, 36);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.formulario a:hover {
+    background-color: chocolate;
+}
+
 
 @media screen and (max-width:678px) {
     form {
