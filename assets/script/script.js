@@ -1,7 +1,5 @@
 
 // Initial data
-alert("Bem vindo(a)!");
-
 let nome = prompt("Digite seu nome: ");
 // Functions
 function formataNome() {
@@ -10,7 +8,7 @@ function formataNome() {
     tamanho = nome.length;
     for (let i = 0; i < tamanho; i++) {
         letra = nome.charAt(i);
-        if (letra == ' ') {
+        if (letra == '') {
             if ((i + 1) < tamanho) {
                 letra = nome.charAt(i + 1).toUpperCase();
                 nome = nome.substring(0, i + 1);
